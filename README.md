@@ -43,7 +43,6 @@ club-ai/
 │   ├── atelier-1.png
 │   ├── atelier-2.png
 │   └── atelier-3.png
-└── captures/                     # Desktop and phone screenshots for submission
 ```
 
 ## Open locally
