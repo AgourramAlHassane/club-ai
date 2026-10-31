@@ -67,12 +67,6 @@ The contact form is an educational simulation. Use fictional data only. No backe
 
 Test required-field and email-format validation, workshop selection, radio buttons, checkboxes, and the reset button. The exact behavior after clicking **Envoyer** depends on the form method in `contact.html`; a GET form can place entered values in the URL.
 
-## Screenshots and submission
-
-For the assignment, include a desktop screenshot and a phone screenshot in `captures/`.
-
-Submit one ZIP containing the four HTML pages, `style.css`, the images, and the screenshots. After extraction, check that every navigation link and image works.
-
 ## Author
 
 **AGOURRAM Al Hassane — Filière IL**
