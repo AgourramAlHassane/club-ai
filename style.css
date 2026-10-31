@@ -1,0 +1,422 @@
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+     body{
+      font-family: Montserrat, Arial, sans-serif;
+      margin: 0;
+     }
+     header{
+      display: grid;
+      grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #0D2640;
+      min-height: 70px;
+      padding: 10px 25px;
+      box-sizing: border-box;
+      z-index: 1000; 
+     }
+   
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+.logo svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+header > a:not(.logo) {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px 0;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s, border-bottom-color 0.3s;
+}
+header > a:not(.logo):hover{
+  color: #005FEE;
+  border-bottom-color: #005FEE;
+}
+header:has(> a:not(.logo):hover) > a.active:not(.logo):not(:hover) {
+  color: white;
+  border-bottom-color: transparent;
+}
+header > a.active:not(.logo) {
+  color: #005FEE;
+  border-bottom-color: #005FEE;
+}
+main{
+  margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.club-title{
+  font-size: 90px;
+}
+.presentation{
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.presentation h1{
+  margin-bottom: 25px;
+  font-size: 55px;
+  line-height: 1.2;
+  color: #0D2640;
+}
+.presentation-text{
+  flex: 1;
+  min-width: 0;
+}
+.summary{
+  font-size: 20px;
+  line-height: 1.6;
+}
+.affiche{
+  width: 40%;
+  height: auto;
+  border: 1px solid #DCE5EF;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(13, 38, 64, 0.06);
+}
+.affiche:hover{
+  cursor: pointer;
+}
+  footer{
+    background-color: #0D2640;
+    width: 100%;
+    padding: 15px 25px;
+  } 
+  footer > p{
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+  }  
+  .ateliers-description,
+  .titre-ateliers{
+    text-align: center;
+  }
+   .titre-ateliers{
+    margin-bottom: 10px;
+    font-size: 35px;
+     color: #0D2640;
+   }
+   .ateliers-description{
+    margin-bottom: 30px;
+    color: #52627D;
+   }
+  .card-container{
+    display: flex;
+    gap: 25px;
+  }
+.card{
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #DCE5EF;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(13, 38, 64, 0.06);
+}
+.card:hover{
+  cursor: pointer;
+}
+.atelier-image{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  font-size: 20px;
+   color: #0D2640;
+  margin: 15px 20px 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #52627D;
+  margin: 0 20px 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #DCE5EF;
+}
+
+th {
+  background-color: #E9F0F7;
+  color: #0D2640;
+}
+
+td {
+  color: #52627D;
+}
+
+.contact-programme {
+  background-color: #E9F0F7;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.contact-programme h3 {
+  color: #005FEE;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.contact-info svg {
+  color: #005FEE;
+  flex-shrink: 0;
+}
+.form-simulation {
+  position: static;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+form {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+legend{
+font-weight: 600;
+color: #005FEE;
+padding: 0 10px;
+}
+fieldset {
+  border: 1px solid #DCE5EF;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  min-width: 0;
+  background-color: white;
+}
+form label {
+  color: #0D2640;
+  font-size: 14px;
+}
+.first-field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.second-field {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.first-field > label,
+.second-field > label,
+.third-field > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #DCE5EF;
+  border-radius: 6px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 14px;
+  color: #0D2640;
+}
+.second-field > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.second-field > div label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #005FEE;
+}
+.third-field textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+form button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+button[type="submit"] {
+  background-color: #005FEE;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #0048B8;
+}
+
+
+button[type="reset"] {
+  background-color: #E9F0F7;
+  color: #0D2640;
+}
+
+button[type="reset"]:hover {
+  background-color: #DCE5EF;
+}
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form-buttons button {
+  margin-right: 0;
+}
+ @media (max-width: 768px) {
+  header {
+    position: static;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    padding: 15px 10px;
+    gap: 15px 5px;
+  }
+
+  .logo {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  header > a:not(.logo) {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    margin: 30px 20px 30px;
+  }
+
+  .presentation {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .presentation-text {
+    width: 100%;
+  }
+
+  .presentation h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .club-title {
+    font-size: 50px;
+  }
+
+  .summary {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .affiche {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .atelier-image {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  form {
+    width: 100%;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  .first-field,
+  .second-field {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .second-field > div {
+    gap: 12px;
+  }
+
+  form button {
+    margin-bottom: 10px;
+  }
+}

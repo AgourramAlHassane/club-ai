@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club AI</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon_club_AI.svg">
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <header>
+
+<a href="index.html" class="logo">
+  <svg width="36" height="36" viewBox="0 0 48 48"
+       fill="none" stroke="currentColor"
+       stroke-width="2.5" stroke-linecap="round"
+       stroke-linejoin="round">
+    <path d="M24 8V4M20 4h8"/>
+    <rect x="8" y="13" width="32" height="26" rx="9"/>
+    <path d="M8 23H4v8h4M40 23h4v8h-4"/>
+    <rect x="14" y="19" width="20" height="13" rx="5"/>
+    <circle cx="20" cy="25" r="2" fill="currentColor" stroke="none"/>
+    <circle cx="28" cy="25" r="2" fill="currentColor" stroke="none"/>
+    <path d="M21 35h6"/>
+  </svg>
+  <span>Club AI</span>
+</a>
+
+    <a href="index.html">Accueil</a>
+    <a href="ateliers.html">Ateliers</a>
+    <a href="programme.html">Programme</a>
+    <a href="contact.html" class="active">Contact</a>
+   </header>
+
+    <main>
+      <h2 class="titre-ateliers">Rejoignez-nous !</h2>
+  <p class="ateliers-description">Remplissez ce formulaire pour nous faire part de votre intérêt et poser vos questions.</p>
+  
+  <dialog open class="form-simulation">
+ <form method="dialog">
+    <fieldset class="first-field">
+      <legend>Informations personnelles</legend>
+      
+      <label>Nom complet *
+        <input type="text" 
+        required 
+        name="nom"
+        placeholder="votre nom complet">
+      </label>
+
+      <label>
+        E-mail *
+        <input type="email" 
+        required 
+        name="email"
+        placeholder="exemple@uiz.ac.ma">
+      </label>
+
+      <label>
+        Téléphone
+        <input type="tel" 
+        placeholder="06 12 00 00 00"
+        name="telephone">
+      </label>
+      </fieldset>
+
+<fieldset class="second-field">
+  <legend>Détails de la participation</legend>
+ <label>
+       Date souhaitée
+       <input type="date"
+        name="date">
+ </label>
+
+      <label>Filière
+      <select name="filiere">
+       <option value="" selected disabled>sélectionner votre filière</option>
+        <option>Licence Ingénierie logicielle</option>
+        <option>Analytique des Données et Intelligence Artificielle </option>
+        <option>Ingénierie Informatique et Systèmes Embarqués</option>
+      </select>
+      </label>
+
+       <label>Atelier préféré
+      <select name="atelier">
+        <option value="" selected disabled>sélectionner votre atelier préféré</option>
+        <option>Assistant pédagogique</option>
+        <option>Qualité du code</option>
+        <option>Prototypage d&#8217;application</option>
+      </select>
+      </label>
+
+    <div> Niveau
+        <label>
+        <input type="radio"
+         name="niveau" 
+        value="debutant"
+         checked>
+      Débutant
+      </label>
+      <label>
+        <input type="radio" 
+        value="intermediaire"
+        name="niveau">
+        Intermédiaire
+      </label>
+    </div>
+
+      <div> Centres d'intérêt
+        <label>
+        <input type="checkbox"
+        name="interets"
+        value="ia">
+      IA
+      </label>
+      <label>
+        <input 
+        type="checkbox" 
+        name="interets"
+        value="web">
+        Web
+      </label>
+       <label>
+        <input 
+        type="checkbox" 
+        name="interets"
+        value="donnees">
+        Données
+      </label>
+      </div>
+    </fieldset>
+
+<fieldset class="third-field">
+  <legend>Message</legend>
+  <label>
+  Votre message
+  <textarea placeholder="votre message ici..." name="message"></textarea>
+  </label>
+</fieldset>
+
+    <div class="form-buttons">
+  <button type="submit">Envoyer</button>
+  <button type="reset">Effacer</button>
+</div>
+  </form>
+  </dialog>
+    </main>
+   <footer>
+    <p>Réalisé par AGOURRAM Al Hassane - Filière IL</p>
+   </footer> 
+  </body>
+</html>
